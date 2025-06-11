@@ -1,7 +1,7 @@
 :root {
   --white: white;
   --font-family--inter: Inter, sans-serif;
-  --cinder-950: #0f0e1a;
+  --cinder-950: black;
   --dodger-blue: #3d9bfc;
   --electric-violet: #7b40e4;
   --violet-red: #f53a8b;
@@ -156,7 +156,13 @@
 }
 
 .nav-div {
-  justify-content: space-between;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: row;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
 }
@@ -217,7 +223,6 @@
 
 .nav-background-gradient {
   z-index: -1;
-  background-image: linear-gradient(90deg, #fff 4%, var(--electric-violet) 25%, var(--violet-red) 50%, var(--burnt-sienna) 75%, var(--dodger-blue) 93%, var(--white));
   width: 100%;
   height: 100%;
   position: absolute;
@@ -351,6 +356,11 @@
   font-size: 64px;
   font-weight: 800;
   line-height: 95%;
+}
+
+.h1-heading.gradient-text {
+  background-color: #2a2929;
+  background-image: none;
 }
 
 .h1-heading._404-slider-text {
@@ -1815,6 +1825,29 @@
 .nav-button-div {
   justify-content: flex-start;
   align-items: center;
+  display: flex;
+}
+
+.utility-page-wrap {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+}
+
+.utility-page-content {
+  text-align: center;
+  flex-direction: column;
+  width: 260px;
+  display: flex;
+}
+
+.utility-page-form {
+  flex-direction: column;
+  align-items: stretch;
   display: flex;
 }
 
