@@ -1,71 +1,69 @@
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-color: #0c0c1c;
-  color: #ffffff;
-  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f2f4;
+  color: #333;
 }
 
-header {
-  background: #1b1b2f;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.logo-container {
+.hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  padding: 3rem;
+  background-color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.logo-container img {
-  max-width: 120px;
+.hero-content {
+  max-width: 600px;
+}
+
+.logo-section img {
+  width: 100px;
   margin-bottom: 1rem;
 }
 
-.logo-container h1 {
+h1 {
   font-size: 2.5rem;
-  color: #ffaa00;
-  margin: 0;
+  margin: 0.5rem 0;
+}
+
+.highlight {
+  color: #00c48c;
 }
 
 .tagline {
-  font-size: 1rem;
-  color: #cccccc;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #00c48c;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #009f6b;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #888;
   margin-top: 0.5rem;
 }
 
-main {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-h2 {
-  color: #ff4477;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
-}
-
-a {
-  color: #ffaa00;
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #1b1b2f;
-  color: #888888;
-  font-size: 0.9rem;
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
