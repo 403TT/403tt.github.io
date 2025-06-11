@@ -7,18 +7,11 @@ body {
 
 /* Header background */
 header {
-    background-color: rgb(4, 20, 32);
+    background-color: #04121f;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-}
-
-/* Logo size adjustment */
-header img {
-    max-height: 100px; /* Adjust as needed */
-    width: auto;
-    height: auto;
 }
 
 
