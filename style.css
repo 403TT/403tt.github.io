@@ -7,10 +7,72 @@ body {
 
 header {
   background: #1b1b2f;
-  padding: 2rem 1rem;
-  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
 }
 
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.logo span {
+  color: #3b82f6; /* Blue accent */
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: #60a5fa;
+}
+
+.cta {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.cta:hover {
+  background-color: #2563eb;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .nav, .cta {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Original styles */
 .logo-container {
   display: flex;
   flex-direction: column;
