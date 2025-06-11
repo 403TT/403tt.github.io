@@ -5,11 +5,22 @@ body {
   color: #ffffff;
 }
 
+/* Header background */
 header {
-  background: #1b1b2f;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 1rem 0;
+    background-color: rgb(4, 20, 32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
+
+/* Logo size adjustment */
+header img {
+    max-height: 100px; /* Adjust as needed */
+    width: auto;
+    height: auto;
+}
+
 
 .header-container {
   max-width: 1200px;
@@ -19,15 +30,6 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-.logo span {
-  color: #3b82f6; /* Blue accent */
 }
 
 .nav {
