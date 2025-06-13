@@ -145,6 +145,10 @@ blockquote {
 
 .page-wrapper {
   background-color: #fff0;
+  background-image: url('../images/BG_Hero_Asset.webp');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 1594px;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
@@ -2105,7 +2109,7 @@ blockquote {
   align-items: flex-end;
 }
 
-.project-snippet {
+.story-snippet {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   text-align: left;
@@ -2115,7 +2119,7 @@ blockquote {
   display: flex;
 }
 
-.project-snippet.gradient-monochrome {
+.story-snippet.gradient-monochrome {
   padding-top: 0;
 }
 
@@ -3314,7 +3318,7 @@ blockquote {
     padding-right: 5rem;
   }
 
-  .project-snippet {
+  .story-snippet {
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     flex-flow: column;
@@ -3748,7 +3752,7 @@ blockquote {
     display: block;
   }
 
-  .project-snippet.gradient-monochrome {
+  .story-snippet.gradient-monochrome {
     font-size: var(--_mobile-typography-system---h3-mobile);
     text-align: left;
   }
@@ -4384,11 +4388,11 @@ blockquote {
     align-items: center;
   }
 
-  .project-snippet {
+  .story-snippet {
     font-size: 1.5rem;
   }
 
-  .project-snippet.gradient-monochrome {
+  .story-snippet.gradient-monochrome {
     font-size: var(--_mobile-typography-system---h3-mobile);
   }
 
