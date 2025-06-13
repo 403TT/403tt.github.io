@@ -2446,9 +2446,6 @@ blockquote {
 
   .page-wrapper {
     text-align: left;
-    background-image: url('../images/B_Hero.webp');
-    background-position: 0 0;
-    background-repeat: no-repeat;
     padding-left: 5rem;
     padding-right: 5rem;
     display: block;
