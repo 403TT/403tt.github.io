@@ -145,10 +145,6 @@ blockquote {
 
 .page-wrapper {
   background-color: #fff0;
-  background-image: url('../images/BG_Hero_Asset.webp');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 1594px;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
@@ -644,6 +640,11 @@ blockquote {
 .hero-wrapper {
   grid-column-gap: 50px;
   grid-row-gap: 50px;
+  -webkit-text-fill-color: inherit;
+  object-fit: fill;
+  background-color: #0000;
+  background-clip: border-box;
+  border-radius: 0;
   flex-flow: column;
   grid-template-rows: auto auto;
   grid-template-columns: 1.5fr 1fr;
@@ -651,10 +652,11 @@ blockquote {
   grid-auto-flow: column;
   justify-content: flex-start;
   align-items: center;
+  min-width: 500px;
   padding-top: 3rem;
   padding-bottom: 4.1875rem;
   display: flex;
-  position: sticky;
+  position: relative;
   top: 0;
 }
 
@@ -1906,7 +1908,7 @@ blockquote {
 
 .social-icon {
   opacity: .5;
-  mix-blend-mode: darken;
+  mix-blend-mode: normal;
 }
 
 .social-icon:hover, .social-icon:focus {
