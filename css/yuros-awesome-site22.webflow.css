@@ -3051,6 +3051,7 @@ blockquote {
   }
 
   .social-proof-wrapper {
+    display: none;
     position: relative;
     overflow: hidden;
   }
@@ -3321,6 +3322,10 @@ blockquote {
   .image-6 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .dashboard-display {
+    display: none;
   }
 
   .project-snippet {
@@ -4030,6 +4035,7 @@ blockquote {
 
   .social-proof-wrapper {
     padding-top: 0;
+    display: none;
   }
 
   .intro-wrapper {
@@ -4185,6 +4191,7 @@ blockquote {
 
   .vertical-padding-small {
     padding-top: 2rem;
+    display: none;
   }
 
   .vertical-padding-large {
@@ -4378,6 +4385,10 @@ blockquote {
   .quote-image {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .dashboard-display {
+    display: none;
   }
 
   .arrow-sign {
