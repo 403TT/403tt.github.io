@@ -145,10 +145,6 @@ blockquote {
 
 .page-wrapper {
   background-color: #fff0;
-  background-image: url('../images/BG_Hero_Asset.webp');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 1594px;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
@@ -2055,7 +2051,6 @@ blockquote {
 
 .dashboard-display {
   border-radius: 18px;
-  box-shadow: 0 -60px 90px -6px #0e0c0c;
 }
 
 .arrow-sign {
