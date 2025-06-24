@@ -1,0 +1,27 @@
+body {
+  background-color: #000;
+  color: #00ff00;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.cli {
+  width: 80%;
+  max-width: 600px;
+}
+.output {
+  white-space: pre-wrap;
+  margin-bottom: 1em;
+}
+input {
+  background: transparent;
+  border: none;
+  color: #00ff00;
+  width: 100%;
+  font-family: monospace;
+  font-size: 1em;
+  outline: none;
+}
