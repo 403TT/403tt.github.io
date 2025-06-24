@@ -3,7 +3,7 @@ const output = document.getElementById("output");
 
 const commands = {
   "get -user about": "Name: 403TT\nWebsite: junctxon.io\nDiscord: @403TT\nGitHub: github.com/403TT",
-  "discord": "<a href='https://discord.com' target='_blank' style='color: #00ff00;'>Discord: 403TT</a>"
+  "discord": "<a href='https://discord.com' target='_blank' style='color: #00ff00;'>Discord: 403TT</a>",
   "github": "<a href='https://github.com/403TT' target='_blank' style='color: #00ff00;'>GitHub:403TT</a>"
 };
 
