@@ -14,7 +14,7 @@ input.addEventListener("keydown", function (e) {
     if (cmd === "clear") {
       output.textContent = "junctxon CLI. Type a command below:\n";
     } else {
-      output.textContent += `\n> ${cmd}\n`;
+      output.textContent += `\n$: ${cmd}\n`;
       if (cmd in commands) {
         output.textContent += `${commands[cmd]}\n`;
       } else {
