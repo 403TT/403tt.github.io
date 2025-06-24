@@ -18,7 +18,7 @@ input.addEventListener("keydown", function (e) {
       if (cmd in commands) {
         output.textContent += `${commands[cmd]}\n`;
       } else {
-        output.textContent += `Command not found. Type 'help' for a list of commands.\n`;
+        output.textContent += `You can leave now...\n`;
       }
     }
 
