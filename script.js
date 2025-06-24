@@ -3,8 +3,6 @@ const output = document.getElementById("output");
 
 const commands = {
   "get -user about": "Name: 403TT\nWebsite: junctxon.io\nDiscord: @403TT\nGitHub: github.com/403TT",
-  "help": "Available commands:\nget -user about\nhelp\nclear",
-  "clear": ""
 };
 
 input.addEventListener("keydown", function (e) {
