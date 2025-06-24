@@ -2,9 +2,9 @@ const input = document.getElementById("cliInput");
 const output = document.getElementById("output");
 
 const commands = {
-  "get -user about": "Name: 403TT\nWebsite: junctxon.io\nDiscord: @403TT\nGitHub: github.com/403TT",
+  "get -user about": "Name: 403TT<br>Website: junctxon.io<br>Discord: @403TT<br>GitHub: github.com/403TT",
   "discord": "<a href='https://discord.com' target='_blank' style='color: #00ff00;'>Discord: 403TT</a>",
-  "github": "<a href='https://github.com/403TT' target='_blank' style='color: #00ff00;'>GitHub:403TT</a>"
+  "github": "<a href='https://github.com/403TT' target='_blank' style='color: #00ff00;'>GitHub: 403TT</a>"
 };
 
 input.addEventListener("keydown", function (e) {
@@ -12,13 +12,13 @@ input.addEventListener("keydown", function (e) {
     const cmd = input.value.trim();
 
     if (cmd === "clear") {
-      output.textContent = "junctxon CLI. Type a command below:\n";
+      output.innerHTML = "junctxon CLI. Type a command below:<br>";
     } else {
-      output.textContent += `\n$: ${cmd}\n`;
+      output.innerHTML += `<br>$: ${cmd}<br>`;
       if (cmd in commands) {
-        output.textContent += `${commands[cmd]}\n`;
+        output.innerHTML += `${commands[cmd]}<br>`;
       } else {
-        output.textContent += `You can leave now...\n`;
+        output.innerHTML += `You can leave now...<br>`;
       }
     }
 
