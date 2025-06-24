@@ -26,3 +26,8 @@ input.addEventListener("keydown", function (e) {
     output.scrollTop = output.scrollHeight;
   }
 });
+
+// Focus input when clicking anywhere on the page
+document.addEventListener("click", () => {
+  input.focus();
+});
