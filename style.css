@@ -38,3 +38,15 @@ input::placeholder {
 @keyframes blink {
   50% { opacity: 0; }
 }
+
+input-line {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  margin-right: 5px;
+  color: #00ff00;
+  font-family: monospace;
+  font-size: 1em;
+}

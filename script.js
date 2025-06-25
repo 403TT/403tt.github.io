@@ -1,12 +1,6 @@
 const input = document.getElementById("cliInput");
 const output = document.getElementById("output");
 
-const commands = {
-  "get -user about": "Name: 403TT<br>Website: junctxon.io<br>Discord: @403TT<br>GitHub: github.com/403TT",
-  "discord": "<a href='https://discord.com' target='_blank' style='color: #00ff00;'>Discord: 403TT</a>",
-  "github": "<a href='https://github.com/403TT' target='_blank' style='color: #00ff00;'>GitHub: 403TT</a>"
-};
-
 input.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     const cmd = input.value.trim();
@@ -15,11 +9,19 @@ input.addEventListener("keydown", function (e) {
       output.innerHTML = "junctxon CLI. Type a command below:<br>";
     } else {
       output.innerHTML += `<br>$: ${cmd}<br>`;
-      if (cmd in commands) {
-        output.innerHTML += `${commands[cmd]}<br>`;
-      } else {
-        output.innerHTML += `You can leave now...<br>`;
-      }
+
+      // 🔁 Send to Cloudflare Worker (API proxy)
+      fetch(`https://api.junctxon.io/?cmd=${encodeURIComponent(cmd)}`)
+        .then(res => {
+          if (!res.ok) throw new Error("API call failed");
+          return res.json();
+        })
+        .then(data => {
+          output.innerHTML += `${data.response}<br>`;
+        })
+        .catch(() => {
+          output.innerHTML += `Unable to process that command.<br>`;
+        });
     }
 
     input.value = "";
@@ -27,12 +29,12 @@ input.addEventListener("keydown", function (e) {
   }
 });
 
-// Focus input when clicking anywhere on the page
+// Auto-focus input when clicking anywhere
 document.addEventListener("click", () => {
   input.focus();
 });
 
-
+// Animated placeholder effect
 const message = "You know what to write here....";
 let index = 0;
 let typingDone = false;
