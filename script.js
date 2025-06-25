@@ -31,3 +31,42 @@ input.addEventListener("keydown", function (e) {
 document.addEventListener("click", () => {
   input.focus();
 });
+
+
+const message = "You know what to write here....";
+let index = 0;
+let typingDone = false;
+
+function typeEffect() {
+  if (index < message.length) {
+    input.placeholder = "$: " + message.substring(0, index + 1);
+    index++;
+    setTimeout(typeEffect, 80);
+  } else {
+    setTimeout(deleteEffect, 1000);
+  }
+}
+
+function deleteEffect() {
+  if (index > 0) {
+    index--;
+    input.placeholder = "$: " + message.substring(0, index);
+    setTimeout(deleteEffect, 40);
+  } else {
+    input.placeholder = "$: ";
+    typingDone = true;
+  }
+}
+
+window.onload = () => {
+  input.focus();
+  typeEffect();
+};
+
+input.addEventListener("input", () => {
+  if (!typingDone) {
+    index = 0;
+    typingDone = true;
+    input.placeholder = "$: ";
+  }
+});

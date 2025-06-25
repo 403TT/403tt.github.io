@@ -7,6 +7,9 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  image-rendering: pixelated;
 }
 .cli {
   width: 80%;
@@ -24,4 +27,14 @@ input {
   font-family: monospace;
   font-size: 1em;
   outline: none;
+}
+
+input::placeholder {
+  color: #00ff00;
+  opacity: 1; /* Ensure it's fully visible */
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
