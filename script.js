@@ -10,7 +10,6 @@ input.addEventListener("keydown", function (e) {
     } else {
       output.innerHTML += `<br>$: ${cmd}<br>`;
 
-      // 🔁 Send to Cloudflare Worker (API proxy)
       fetch(`https://api.junctxon.io/?cmd=${encodeURIComponent(cmd)}`)
         .then(res => {
           if (!res.ok) throw new Error("API call failed");
